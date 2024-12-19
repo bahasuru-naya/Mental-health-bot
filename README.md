@@ -7,7 +7,7 @@ RASA chatbot to assist mental health
 rasa shell
  ```
 ```
-rasa run action 
+rasa run actions 
  ```
 
 # To run  chatbot in GUI application(socketio)
@@ -16,5 +16,5 @@ rasa run action
 rasa run -m models --enable-api --cors "*"
  ```
 ```
-rasa run action 
+rasa run actions 
  ```
