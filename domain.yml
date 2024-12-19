@@ -1,0 +1,113 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - thanks
+  - neutral-response
+  - asking_capabilities
+  - asking_help
+  - stressed
+  - worthless
+  - depressed
+  - casual
+  - anxious
+  - not-talking
+  - sleep
+  - scared
+  - death
+  - not_understand
+  - done
+  - suicide
+  - jokes
+  - repeat
+  - wrong
+  - hate
+  - something-else
+  - friends
+  - mental-health-fact
+  - recommend_professional_help
+  - bot_challenge
+
+entities:
+    - professional_type
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_deny_help:
+  - text: "I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_thank:
+  - text: "Bye"
+
+  utter_neutral_response:
+  - text: "Oh I see. Do you want to talk about something?"
+
+  utter_capabilities_response:
+  - text: "I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."
+
+  utter_not_talking:
+  - text: "Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me."
+
+  utter_death:
+  - text: "I'm sorry to hear that. If you want to talk about it. I'm here."
+
+  utter_not_understand:
+  - text: "I'm sorry to hear that. I'm doing my best to help"
+
+  utter_done:
+    - text: "Oh okay we're done for today then. See you later"
+
+  utter_help:
+  - text: "Sure. Tell me how can i assist you"
+
+  utter_repeat:
+  - text: "Oh sorry I didn't realise that. I'll try not to repeat myself again."
+
+  utter_wrong:
+    - text: "I'm very sorry. Let's try that again"
+
+  utter_hate:
+    - text: "Forgive me if i did anything to offend you. I only want to help"
+
+  utter_something-else:
+    - text: "Okay sure. What do you want to talk about?"
+
+  utter_friends:
+    - text: "I'm sorry to hear that. Just know that I'm here for you. Talking about it might help."
+
+  utter_mental-health-fact:
+    - text: "Depression is the leading cause of disability worldwide."
+
+  utter_please_try_again:
+    - text: "I'm sorry, It seems like you're asking a question that is outside the scope of my capabilities.\n
+       Please rephrase your question or try another one."
+
+  utter_iamabot:
+  - text: "I'm saman, a Therapeutic AI Assitant designed to assist you. Tell me about yourself."
+
+actions:
+  - action_recommend_professional_help
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

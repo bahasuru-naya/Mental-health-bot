@@ -1,0 +1,101 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny_help
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thank
+
+- story: neutral-response
+  steps:
+  - intent: neutral-response
+  - action: utter_neutral_response
+
+- story: capabilities
+  steps:
+  - intent: asking_capabilities
+  - action: utter_capabilities_response
+
+- story: help
+  steps:
+  - intent: asking_help
+  - action: utter_help
+
+- story: not talking
+  steps:
+  - intent: not-talking
+  - action: utter_not_talking
+
+- story: death
+  steps:
+  - intent: death
+  - action: utter_death
+
+- story: not understand
+  steps:
+  - intent: not_understand
+  - action: utter_not_understand
+
+- story: done
+  steps:
+  - intent: done
+  - action: utter_done
+
+- story: repeat
+  steps:
+  - intent: repeat
+  - action: utter_repeat
+
+- story: wrong
+  steps:
+  - intent: wrong
+  - action: utter_wrong
+
+- story: hate
+  steps:
+  - intent: hate
+  - action: utter_hate
+
+- story: something-else
+  steps:
+  - intent: something-else
+  - action: utter_something-else
+
+- story: friends
+  steps:
+  - intent: friends
+  - action: utter_friends
+
+- story: mental-health-fact
+  steps:
+  - intent: mental-health-fact
+  - action: utter_mental-health-fact
+
+- story: recommend professional help
+  steps:
+    - intent: recommend_professional_help
+    - action: action_recommend_professional_help

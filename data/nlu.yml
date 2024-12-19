@@ -1,0 +1,522 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+
+
+- intent: recommend_professional_help
+  examples: |
+    - Can you recommend a [therapist](professional_type)?
+    - I need to find a good [counselor](professional_type).
+    - Are there any [psychiatrists](professional_type) near me?
+    - Suggest a [psychologist](professional_type) for mental health issues.
+    - Where can I find a [life coach](professional_type)?
+
+- lookup: professional_type
+  examples: |
+    - therapist
+    - counselor
+    - psychiatrist
+    - psychologist
+    - life coach
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - That's helpful
+    - Thanks for the help
+    - Than you very much
+
+- intent: neutral-response
+  examples: |
+    - nothing much
+    - not much
+    - just the usual
+    - everything's fine
+    - nothing new
+    - all good
+    - just relaxing
+    - same as always
+    - not really doing anything
+    - just taking it easy
+    - not much to say
+    - everything is okay
+    - I'm good
+    - just chilling
+
+- intent: asking_capabilities
+  examples: |
+    - What can you do?
+    - What are your features?
+    - What are your capabilities?
+    - What can you help me with?
+    - What services do you offer?
+    - What is your functionality?
+    - How can you assist me?
+    - What tasks can you perform?
+    - What can you help me with?
+    - What can you provide?
+    - What are you capable of?
+    - What can you assist with?
+    - What can you handle?
+    - How can you be useful?
+    - What functions do you have?
+    - What can you do for me?
+    - What are your abilities?
+    - What can I ask you about?
+    - How can you support me?
+    - What tasks are you equipped for?
+
+- intent: asking_help
+  examples: |
+    - Could you help me?
+    - give me a hand please
+    - Can you help?
+    - What can you do for me?
+    - I need support
+    - I need help
+    - Support me please
+    - Can you assist me?
+    - I require assistance.
+    - Can you provide support?
+    - I’m looking for help.
+    - Help me out.
+    - I need some help.
+    - Could you assist?
+    - I need your help.
+    - I want some advice.
+    - I need some advice.
+    - I need advice on something
+
+- intent: stressed
+  examples: |
+    - I am so stressed out.
+    - I am so stressed.
+    - I feel stuck.
+    - I still feel stressed.
+    - I am so burned out.
+    - I can't handle this stress.
+    - I am overwhelmed.
+    - I'm feeling really anxious.
+    - I'm under a lot of pressure.
+    - I'm feeling drained.
+    - This is too much for me.
+    - I'm on edge.
+    - I can't seem to relax.
+    - I'm feeling really overwhelmed.
+    - I'm struggling to cope.
+    - I'm feeling burnt out.
+    - I'm at my breaking point.
+    - I feel exhausted.
+    - I'm stressed beyond belief.
+    - This stress is too much.
+
+- intent: worthless
+  examples: |
+    - I feel so worthless.
+    - No one likes me.
+    - I can't do anything right.
+    - I am so useless.
+    - Nothing makes sense anymore.
+    - I feel like a failure.
+    - I don't have any value.
+    - I can't seem to achieve anything.
+    - I'm not good at anything.
+    - I feel insignificant.
+    - I feel like I'm not enough.
+    - I don't matter to anyone.
+    - I'm always messing things up.
+    - I feel like I can't contribute.
+    - I'm not making a difference.
+    - I feel like I'm failing at everything.
+    - I can't find my purpose.
+    - I feel inadequate.
+    - I feel like I'm worth nothing.
+    - I don't see the point in trying.
+
+- intent: depressed
+  examples: |
+    - I can't take it anymore.
+    - I am so depressed.
+    - I feel completely hopeless.
+    - I'm struggling with depression.
+    - I can't seem to find joy in anything.
+    - Everything feels so overwhelming.
+    - I feel empty inside.
+    - I don't see a way out of this.
+    - I'm just so down all the time.
+    - I feel like there's no way out.
+    - I feel like giving up.
+    - I can't escape these dark thoughts.
+    - I feel trapped in my own mind.
+    - I feel like I'm in a deep hole.
+    - I'm constantly feeling sad.
+    - I don't have the energy to do anything.
+    - I feel like I'm losing control.
+    - I can't stop feeling this way.
+    - I'm struggling to get out of bed.
+    - I feel isolated and alone.
+
+- intent: casual
+  examples: |
+    - Oh I see.
+    - ok
+    - okay
+    - nice
+    - Whatever
+    - Sure
+    - That's fine
+    - Cool
+    - Alright
+    - No problem
+    - Got it
+    - I get it
+    - Makes sense
+    - Yeah, sure
+    - Sounds good
+    - Fine by me
+    - Alright then
+    - Alright, no worries
+
+- intent: anxious
+  examples: |
+    - I feel so anxious.
+    - I'm so anxious because of this.
+    - I'm feeling really anxious right now.
+    - This situation makes me anxious.
+    - I can't stop feeling anxious.
+    - I'm anxious about what's going to happen.
+    - My anxiety is really bad today.
+    - I'm worried and anxious.
+    - I'm feeling a lot of anxiety.
+    - I get anxious when I think about it.
+    - This is making me really anxious.
+    - I'm too anxious to focus.
+    - Anxiety is overwhelming me.
+    - I can't shake off this anxious feeling.
+
+- intent: not-talking
+  examples: |
+    - I don't want to talk about it.
+    - No, just stay away.
+    - I can't bring myself to open up.
+    - Just shut up.
+    - I'd rather not discuss it.
+    - I need some space right now.
+    - Please drop the subject.
+    - I'm not in the mood to talk.
+    - I don't feel like sharing.    
+    - I'd prefer to be alone right now.
+    - I don't want to go into details.
+    - I'm not ready to talk about this.
+    - Let's not talk about it.
+    - I need a break from this conversation.
+    - Please leave me alone.
+    - I'm not interested in talking right now.
+    - I’d rather keep it to myself.
+    - Can we not talk about this?
+    - I don’t feel like discussing it.
+
+- intent: sleep
+  examples: |
+    - I have insomnia.
+    - I am suffering from insomnia.
+    - I can't sleep.
+    - I haven't slept for the last few days.
+    - I can't seem to go to sleep.
+    - I haven't had proper sleep for the past few days.
+    - I'm struggling to fall asleep.
+    - My sleep schedule is all messed up.
+    - I keep waking up in the middle of the night.
+    - I'm having trouble getting a good night's sleep.
+    - I feel exhausted because of my sleep issues.
+    - I'm dealing with sleepless nights.
+    - I can't get any rest.
+    - I’m lying awake all night.
+    - My insomnia is really affecting me.
+    - I can't seem to get enough sleep.
+    - I’m having trouble with my sleep patterns.
+    - I feel restless at night.
+    - I haven’t been able to get a full night’s sleep.
+    - My lack of sleep is impacting my daily life.
+
+- intent: scared
+  examples: |
+    - I'm scared.
+    - I am scared for myself.
+    - I feel afraid.
+    - I am really frightened right now.
+    - I'm anxious and scared.
+    - I don't know what to do; I'm scared.
+    - I feel nervous and scared.
+    - I'm terrified of what's going to happen.
+    - I can't stop feeling scared.
+    - I feel uneasy and scared.
+    - I am scared about the future.
+    - I am afraid of something bad happening.
+    - I feel like something terrible is going to happen.
+    - I'm scared to be alone.
+    - I'm worried and scared.
+    - I feel a lot of fear right now.
+    - I'm scared and overwhelmed.
+    - I'm experiencing fear and anxiety.
+    - I feel a sense of dread.
+    - I'm scared and unsure about everything.
+    
+- intent: death
+  examples: |
+    - My mom died.
+    - My brother died.
+    - My dad passed away.
+    - My sister passed away.
+    - My friend passed away.
+    - I lost someone close to me.
+    - I’m grieving the loss of my loved one.
+    - My loved one is no longer here.
+    - I’m mourning the death of someone special.
+    - Someone important to me has passed away.
+    - I’m dealing with the death of a family member.
+    - I’ve recently experienced a death in the family.
+    - My relative has passed away.
+    - I’m struggling with the loss of a loved one.
+    - My partner died.
+    - I’m heartbroken over a recent death.
+    - I feel the absence of someone who has died.
+    - I’m going through a tough time after a death.
+    - I’m trying to cope with a recent loss.
+    - I lost someone dear to me.
+
+- intent: not_understand
+  examples: |
+    - You don't understand me.
+    - You're just some robot. How would you know?
+    - You can't possibly know what I'm going through.
+    - Nobody understands me.
+    - You wouldn't get it.
+    - You don’t know what it’s like for me.
+    - You can't relate to my situation.
+    - It feels like you don’t understand my struggles.
+    - How can you understand what I’m feeling?
+    - You’re not capable of understanding my problems.
+    - You don’t get how hard this is for me.
+    - You’re just a machine, you can’t understand.
+    - I don’t think you understand what I’m saying.
+    - You’re not equipped to understand my situation.
+    - You don’t seem to grasp what I’m going through.
+    - You don’t have the capacity to understand my feelings.
+    - How could you possibly understand my pain?
+    - You’re not able to comprehend my struggles.
+
+- intent: done
+  examples: |
+    - That's all.
+    - I don't have anything more to say.
+    - Nothing else.
+    - That's all I have to say.
+    - No, that would be all.
+    - I'm finished talking.
+    - I'm done here.
+    - I've said everything I needed to.
+    - I have nothing more to add.
+    - That's it for now.
+    - No further comments.
+    - I've said what I wanted to.
+    - I'm done for today.
+    - There's nothing more from my side.
+    - That's all I needed to say.
+
+- intent: suicide
+  examples: |
+    - I want to kill myself
+    - I've thought about killing myself
+    - I want to die
+    - I am going to kill myself
+    - I am going to commit suicide
+    - I can't go on anymore
+    - Ending it all seems like the only option
+    - I wish I wasn't here anymore
+    - Life isn't worth living
+    - I don't want to live anymore
+    - No one would care if I was gone
+    - I'm done with everything
+
+- intent: jokes
+  examples: |
+    - Tell me a joke.
+    - Tell me another joke.
+    - Can you make me laugh?
+    - Give me a funny joke.
+    - Do you know any jokes?
+    - Make me laugh.
+    - Tell me something funny.
+    - Do you have a joke for me?
+
+- intent: repeat
+  examples: |
+    - You already told me that.
+    - You mentioned that already.
+    - Why are you repeating yourself?
+    - You've said this before.
+    - Stop repeating the same thing.
+    - Didn't you just say that?
+    - You're repeating yourself.
+    - I heard this already.
+
+- intent: wrong
+  examples: |
+    - What are you saying?
+    - That doesn't make sense.
+    - Wrong response.
+    - Wrong answer.
+    - That's not correct.
+    - You're mistaken.
+    - That's incorrect.
+    - No, that's wrong.
+    - You're wrong about that.
+
+- intent: hate
+  examples: |
+    - Are you stupid?
+    - You're crazy.
+    - You are dumb.
+    - Are you dumb?
+    - I hate you.
+    - I don't like you.
+    - I don't trust you.
+    - I despise you.
+    - You're worthless.
+    - You're useless.
+    - You're annoying.
+    - You're terrible.
+    - You make me sick.
+    - I can't stand you.
+    - You're no help at all.
+
+- intent: something-else
+  examples: |
+    - I want to talk about something else
+    - Let's talk about something else.
+    - Can we not talk about this?
+    - I don't want to talk about this.
+    - Let's change the topic.
+    - Can we move on to another subject?
+    - I'd rather discuss something different.
+    - I don't feel comfortable talking about this.
+    - Let's drop this and talk about something else.
+    - I'd like to switch topics.
+
+- intent: friends
+  examples: |
+    - I don't have any friends.
+    - I feel alone because I have no friends.
+    - I don't have anyone to talk to.
+    - I don't have any close friends.
+    - I feel isolated and friendless.
+    - I don't have a social circle.
+    - I struggle with making friends.
+    - I feel like I don't belong.
+    - I haven't made any friends.
+    - I don't feel connected to anyone.
+
+- intent: mental-health-fact
+  examples: | 
+    - Tell me a fact about mental health.
+    - Share a mental health fact.
+    - Give me a mental health fact.
+    - What is a fact about mental health?
+    - Tell me another mental health fact.
+    - Provide a fact about mental health.
+    - What’s a fact related to mental health?
+    - Share another mental health fact.
+    - Give me more information about mental health.
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who are you?
+    - What are you?
