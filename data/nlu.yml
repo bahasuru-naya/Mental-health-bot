@@ -90,8 +90,8 @@ nlu:
     - Can you recommend a [therapist](professional_type)?
     - I need to find a good [counselor](professional_type).
     - Are there any [psychiatrists](professional_type) near me?
-    - Suggest a [psychologist](professional_type) for mental health issues.
-    - Where can I find a [life coach](professional_type)?
+    - Suggest a [counselor](professional_type) for mental health issues.
+    - Where can I find a [counselor](professional_type)?
 
 - lookup: professional_type
   examples: |
